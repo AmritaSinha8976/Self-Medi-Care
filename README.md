@@ -112,13 +112,13 @@
 
 ### Contributors
 
-- [Amrita Sinha](https://github.com/amrita-sinha)
+- [Amrita Sinha](https://github.com/AmritaSinha8976)
   - Lead model development, optimized Decision Tree, backend setup, and frontend integration.
 
-- [Surya Sah](https://github.com/surya-sah)
+- [Surya Sah](https://github.com/SuryaSahh)
   - Data preparation, model validation, prediction routes, and frontend output integration.
 
-- [Moha](https://github.com/moha-username)
+- [Moha](https://github.com/)
   - Dataset management, route testing, and debugging for smooth data flow.
 
 
@@ -148,4 +148,3 @@ We extend our gratitude to our mentors and colleagues who supported this project
 ---
 
 Feel free to explore, contribute, and share your feedback! Let’s make healthcare more accessible together.
-
