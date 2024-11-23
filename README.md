@@ -118,7 +118,7 @@
 - [Surya Sah](https://github.com/SuryaSahh)
   - Data preparation, model validation, prediction routes, and frontend output integration.
 
-- [Moha](https://github.com/)
+- [Moha](https://github.com/mohashekhar16)
   - Dataset management, route testing, and debugging for smooth data flow.
 
 
