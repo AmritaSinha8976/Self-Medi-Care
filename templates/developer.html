@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meet Our Developers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      .nav-link {
+        font-size: larger;
+        font-weight: bold;
+        color: black;
+        padding: 5px 15px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        border-radius: 12px;
+      }
+
+      .nav-link:hover {
+        background-color: #c2f8cb;
+        color: black;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-image: url("{{ url_for('static', filename='aboutbg.jpg') }}");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: #f0f2f5;
+        font-family: 'Arial', sans-serif;
+      }
+
+      .container {
+        margin-top: 40px;
+      }
+
+      .team-header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .team-header h2 {
+        font-size: 2.5rem;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .team-header p {
+        font-size: 1.2rem;
+        color: #000000;
+      }
+
+      .card {
+        background-color: rgba(173, 216, 230, 0.7);
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+      }
+
+      .card-body h5 {
+        font-size: 1.4rem;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .card-body p {
+        font-size: 1rem;
+        color: #555;
+      }
+
+      .social-icons a {
+        font-size: 1.2rem;
+        color: #007bff;
+        margin-right: 10px;
+        transition: color 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: #0056b3;
+      }
+
+      footer {
+        margin-top: 50px;
+        text-align: center;
+        color: #888;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: transparent !important;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/developer">Developer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Team Header -->
+      <div class="team-header">
+        <h2>Meet Our Developers</h2>
+        <p>Three talented individuals, one goal – transforming healthcare with AI & ML</p>
+      </div>
+
+      <!-- Developer Cards -->
+      <div class="row">
+        <!-- Developer 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <img src="static/amrita.png" class="card-img-top mx-auto mt-3" alt="amrita" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+            <div class="card-body">
+              <h5>Amrita Sinha</h5>
+              <p>Lead model development, optimize Decision Tree, set up backend routes, and display predictions in frontend.</p>
+              <div class="social-icons">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Developer 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <img src="static/surya.png" class="card-img-top mx-auto mt-3" alt="surya" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+            <div class="card-body">
+              <h5>Surya Sah</h5>
+              <p>Support model validation, handle data prep, build prediction routes, integrate outputs, and evaluate model metrics.</p>
+              <div class="social-icons">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Developer 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <img src="static/moha.png" class="card-img-top mx-auto mt-3" alt="xyz" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+            <div class="card-body">
+              <h5>Moha</h5>
+              <p>Manage datasets, debug routes, test forms, and assist in visualizing model metrics for insights.</p>
+              <div class="social-icons">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <p>© 2024 Self-Medi Care Team. All Rights Reserved.</p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

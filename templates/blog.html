@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Symptom-Based Disease Diagnosis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+    .nav-link {
+      font-size: larger;
+        font-weight: bold; 
+        color: black;
+        padding: 5px 15px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        border-radius: 12px;
+    }
+
+    .nav-link:hover {
+        background-color: #c2f8cb;
+        color: black;
+    }
+    body {
+      background-image: url("{{ url_for('static', filename='blogbg.jpg') }}");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+      .container {
+        background-color: rgba(173, 216, 230, 0.8);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        padding: 40px;
+        margin-top: 40px;
+        max-width: 900px;
+      }
+      h2 {
+        font-weight: 700;
+        color: #343a40;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      h3 {
+        color: #007bff;
+        font-weight: 600;
+        margin-top: 30px;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+      }
+      p, li {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #555;
+      }
+      ol, ul {
+        margin-top: 20px;
+      }
+      ol li, ul li {
+        margin-bottom: 15px;
+      }
+      .highlight {
+        background-color: #e3f2fd;
+        border-left: 4px solid #007bff;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+      .btn-primary {
+        margin-top: 40px;
+        padding: 10px 30px;
+        border-radius: 50px;
+        background-color: #007bff;
+        border-color: #007bff;
+        font-size: 1.2rem;
+      }
+      .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+
+  
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: transparent !important;">
+    <div class="container-fluid">
+    
+      <!-- Logo at the top-left corner -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/developer">Developer</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/blog">Blog</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+    <div class="container">
+        <h2 class="text-center">Building a Symptom-Based Disease Diagnosis Web App</h2>
+
+        <p>In today's digital age, access to healthcare information is critical. Remote healthcare solutions are becoming increasingly important, so we took on the challenge of creating a <strong>symptom-based disease diagnosis web app</strong>. Using Flask for the backend and a Decision Tree Classifier model, we developed a platform that helps users identify potential diseases based on their reported symptoms.</p>
+
+        <h3>The Problem</h3>
+        <p>People often experience symptoms and seek immediate answers. However, differentiating between illnesses can be difficult, especially when symptoms overlap. Our solution allows users to input their symptoms and receive potential diagnoses instantly, offering them peace of mind and direction.</p>
+
+        <div class="highlight">
+            <h3>The Solution</h3>
+            <p>Our web app enables users to input their symptoms, and the platform uses a <strong>pre-trained Decision Tree Classifier model</strong> to predict possible diseases. Here’s how it works:</p>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item">Users input their symptoms via an intuitive, user-friendly interface.</li>
+                <li class="list-group-item">Our machine learning model predicts the most likely diseases based on the input.</li>
+                <li class="list-group-item">Users receive a prediction instantly, along with additional details like disease description, medications, diet, and workout tips.</li>
+            </ol>
+        </div>
+
+        <h3>Key Features</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>User-Friendly Interface:</strong> Simple, clean UI designed for ease of use.</li>
+            <li class="list-group-item"><strong>Accurate Predictions:</strong> A reliable machine learning model trained on a vast dataset provides precise predictions.</li>
+            <li class="list-group-item"><strong>Comprehensive Information:</strong> In addition to predictions, the app offers detailed advice on treatments, medications, and lifestyle changes.</li>
+            <li class="list-group-item"><strong>Educational Blog Posts:</strong> Users can read health-related blog posts to expand their knowledge and stay informed.</li>
+        </ul>
+
+        <h3>Conclusion</h3>
+        <p>Our Symptom-Based Disease Diagnosis Web App combines the power of <strong>machine learning</strong> and <strong>healthcare</strong> to provide users with accurate and convenient access to health information. It’s a significant leap forward in making healthcare more accessible to all.</p>
+
+        <button class="btn btn-primary d-block mx-auto">Explore More</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
