@@ -64,8 +64,8 @@
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/self-medi-care.git
-   cd self-medi-care
+   git clone https://github.com/AmritaSinha8976/Self-Medi-Care
+   cd Self-Medi-Care
    ```
 
 2. **Set Up Virtual Environment:**
